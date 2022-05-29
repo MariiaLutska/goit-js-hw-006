@@ -18,3 +18,4 @@ const elements = images.map(({ url, alt }) =>
   `<li class="gallery-item"><img class="item__image" src='${url}' alt = '${alt}'></li>`);
 console.log(elements);
 imageContainerEl.insertAdjacentHTML("beforeend", elements);
+
