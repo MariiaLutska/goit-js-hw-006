@@ -26,7 +26,6 @@ submitForm.addEventListener('submit', () => {
         user.email = emailField;
         user.password = passwordField;
     }
-    return user;
 
     document.querySelector('.login-form').reset();
 });

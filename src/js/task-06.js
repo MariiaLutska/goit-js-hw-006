@@ -5,7 +5,7 @@
 
 document.getElementById("validation-input").onblur = function() {
   console.log(this.value.length);
-  if (this.getAttribute('data-length') == this.value.length) { 
+  if (parseInt(this.getAttribute('data-length')) === this.value.length) { 
     this.classList.remove('invalid');
     this.classList.add('valid');
   } else {
@@ -13,4 +13,3 @@ document.getElementById("validation-input").onblur = function() {
     this.classList.add('invalid');
   }
 };
-
